@@ -1,0 +1,11 @@
+.contact-form { padding: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.field { display: grid; gap: 8px; }
+.field--full { grid-column: 1 / -1; }
+.field label { font-weight: 850; }
+.field input, .field textarea, .field select { width: 100%; border: 1px solid var(--line); border-radius: 16px; padding: 14px 15px; background: rgba(255,255,255,.62); color: var(--asphalt); transition: border-color .2s ease, box-shadow .2s ease; }
+.field input:focus, .field textarea:focus, .field select:focus { border-color: var(--burnt); box-shadow: 0 0 0 4px rgba(199,111,50,.13); outline: 0; }
+.field [aria-invalid="true"] { border-color: #a33b24; }
+.field small { color: #8b2a19; font-weight: 750; }
+.contact-form button { justify-self: start; }
+.success { margin: 0; color: var(--moss); font-weight: 850; align-self: center; }
+@media (max-width: 720px) { .contact-form { grid-template-columns: 1fr; padding: 20px; } }
